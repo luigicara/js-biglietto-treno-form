@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#b91450;
+}
+
+.container {
+    width: 1140px;
+    margin: 5rem auto;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin: 1rem;
+}
+
+section {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.row {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.row > div {
+    width: calc(100% / 3);
+}
+
+.row > div > * {
+    display: block;
+}
+
+input, select {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #b91450;
+    border-width: 1px;
+    border-style: solid;
+}
+
+label {
+    margin: 1rem;
+    color: #b91450;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btns {
+    margin: auto;
+    width: fit-content;
+}
+
+.btns input {
+    color: #b91450;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+section > div {
+    padding: 1rem;
+}
+
+.biglietto {
+    display: flex;
+}
+
+.nome-passeggero {
+    width: fit-content;
+    background-color: gray;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.altre-info {
+    flex-grow: 1;
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.altre-info > div {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.categoria {
+    margin-bottom: 3rem;
+}
