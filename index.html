@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biglietto treno</title>
+</head>
+<body>
+    <div class="container">
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+        <section>
+            <form action="#">
+                <div class="row"> 
+                    <div>
+                        <label for="name">Nome Cognome</label>
+                        <input type="text" name="name" id="name-first">
+                    </div>
+
+                    <div>
+                        <label for="km">Km da percorrere</label>
+                        <input type="number" min="1" name="km" id="km" value="1">
+                    </div>
+                    
+                    <div>
+                        <label for="age">Fascia d'età</label>
+                        <select id="age" name="age">
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="minorenne">Minorennne</option>
+                            <option value="senior">Senior (> 65)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <input type="button" value="Genera" id="genera">
+
+                    <input type="reset" value="Annulla" id="annulla">
+                </div>
+            </form>
+        </section>
+
+        <h2>IL TUO BIGLIETTO</h2>
+        
+        <section>
+
+            <div>
+                <h3>DETTAGLIO PASSEGGERI</h3>
+
+                <div class="biglietto">
+                    <div class="nome-passeggero">
+                        <h3>NOME PASSEGGERO</h3>
+                        <div id="name-output"></div>
+                    </div>
+
+                    <div class="altre-info">
+                        <div>
+                            <div class="categoria">Offerta</div>
+                            <div class="caratteristiche" id="ticket-type"></div> 
+                        </div>
+
+                        <div>
+                            <div class="categoria">Carrozza</div>
+                                <div class="caratteristiche" id="wagon"></div>
+                        </div>
+
+                        <div>
+                            <div class="categoria">Codice CP</div>
+                            <div class="caratteristiche" id="code"></div>
+                        </div>
+
+                        <div>
+                            <div class="categoria">Costo Biglietto</div>
+                            <div class="caratteristiche" id="price"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
