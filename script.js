@@ -25,7 +25,7 @@ let ticket
 genera.addEventListener("click",
     function () {
         price = cost * km.value
-
+        console.log(fname.value)
         if (fname.value == "") {
 
             alert("Inserisci nome e cognome, perfavore")
