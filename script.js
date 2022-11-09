@@ -10,6 +10,8 @@ let price
 
 let genera = document.getElementById("genera");
 
+let annulla = document.getElementById("annulla")
+
 let nameOutput = document.getElementById("name-output");
 
 let ticketType = document.getElementById("ticket-type");
@@ -22,6 +24,10 @@ let priceOutput = document.getElementById("price");
 
 let ticket
 
+let ticketAppear = document.getElementsByClassName("non-visible")
+
+console.log(ticketAppear)
+
 genera.addEventListener("click",
     function () {
         price = cost * km.value
@@ -31,6 +37,9 @@ genera.addEventListener("click",
             alert("Inserisci nome e cognome, perfavore")
 
         } else {
+            ticketAppear[0].classList.add('active')
+
+            ticketAppear[1].classList.add('active')
 
             if (eta.value === "minorenne") {
                 price -= price * 0.20;
@@ -53,5 +62,13 @@ genera.addEventListener("click",
             priceOutput.innerHTML = price.toFixed(2) + "€"
         }
 
+    }
+)
+
+annulla.addEventListener("click",
+    function () {
+        ticketAppear[0].classList.remove('active')
+
+        ticketAppear[1].classList.remove('active')
     }
 )

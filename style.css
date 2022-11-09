@@ -71,6 +71,14 @@ section > div {
     padding: 1rem;
 }
 
+.non-visible {
+    display: none;
+}
+
+.non-visible.active {
+    display: block;
+}
+
 .biglietto {
     display: flex;
 }
